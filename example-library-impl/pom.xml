@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.example.library</groupId>
+    <artifactId>example-library</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>de.example.library</groupId>
+  <artifactId>example-library-impl</artifactId>
+  <properties>
+       <springframework.version>5.2.3.RELEASE</springframework.version>
+  </properties>
+   
+  <dependencies>
+  	<dependency>
+   		<groupId>de.example.library</groupId>
+  		<artifactId>example-library-api</artifactId>
+   		<version>0.0.1-SNAPSHOT</version>
+ 	</dependency>
+	<dependency>
+    	<groupId>org.springframework.data</groupId>
+    	<artifactId>spring-data-jpa</artifactId>
+    	<version>2.2.6.RELEASE</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>5.2.8.RELEASE</version>
+    <scope>test</scope>
+</dependency>
+	
+	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>${springframework.version}</version>
+	</dependency>
+  </dependencies>
+</project>
